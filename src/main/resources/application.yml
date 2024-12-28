@@ -1,0 +1,14 @@
+spring:
+ application:
+  name: demo.batch
+ datasource:
+    url: jdbc:postgresql://localhost:5432/CustomerDB-Dev
+    username: postgres
+    password: Harami@1
+    driver-class-name: org.postgresql.Driver
+
+ batch:
+  job:
+   enabled: true
+  jdbc:
+      initialize-schema: always
